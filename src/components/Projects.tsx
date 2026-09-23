@@ -1,4 +1,7 @@
 import { ProjectCard } from './ProjectCard'
+import IdeartPreview from '../assets/projects/ideart-proformas.png'
+import TesisPreview from '../assets/projects/sigchos-booking.png'
+import PetClubPreview from '../assets/projects/petclub.jpeg'
 
 export function Projects() {
   return (
@@ -17,7 +20,7 @@ export function Projects() {
         <div className="space-y-12">
           <ProjectCard
             preview={{
-              img: '/projects/ideart-proformas.png',
+              img: IdeartPreview,
               alt: 'Renderizado de Proformas en formato PDF',
             }}
             tag="Freelance"
@@ -53,7 +56,7 @@ export function Projects() {
 
           <ProjectCard
             preview={{
-              img: '/projects/sigchos-booking.png',
+              img: TesisPreview,
               alt: 'Landing page de plataforma de reservas (Sigchos)',
             }}
             tag="Proyecto de Tesis"
@@ -89,7 +92,7 @@ export function Projects() {
 
           <ProjectCard
             preview={{
-              img: '/projects/petclub.jpeg',
+              img: PetClubPreview,
               alt: 'Página principal de PetClub App.',
             }}
             tag="Pasantías"

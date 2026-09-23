@@ -1,5 +1,6 @@
 import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io'
 import { IoMail } from 'react-icons/io5'
+import CV from '../assets/docs/cv.pdf'
 
 export function Hero() {
   return (
@@ -39,8 +40,8 @@ export function Hero() {
 
           <a
             className="inline-block px-6 py-3.5 rounded-xl hover:bg-[#18181b] border border-brand-border text-zinc-300 hover:text-white font-semibold transition-all"
-            href="/cv.pdf"
-            download
+            href={CV}
+            download="CV - Alexander Guacan.pdf"
           >
             Descargar CV
           </a>
