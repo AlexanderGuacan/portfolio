@@ -1,4 +1,5 @@
 import { IoCheckmark } from 'react-icons/io5'
+import { PlatformCard } from './PlatformCard'
 
 interface Props {
   preview: {
@@ -12,6 +13,11 @@ interface Props {
   description: string
   achievements: (string | React.ReactNode)[]
   technologies: string[]
+  urls?: {
+    web?: string
+    android?: string
+    ios?: string
+  }
 }
 
 function formatDate(date: Date): string {
@@ -30,6 +36,7 @@ export function ProjectCard({
   description,
   achievements,
   technologies,
+  urls,
 }: Props) {
   return (
     <article
@@ -86,6 +93,24 @@ export function ProjectCard({
               <span className="badge">{technology}</span>
             </li>
           ))}
+        </ul>
+
+        <ul className="flex flex-wrap gap-4">
+          {urls?.web && (
+            <li>
+              <PlatformCard href={urls.web} platform="web" />
+            </li>
+          )}
+          {urls?.android && (
+            <li>
+              <PlatformCard href={urls.android} platform="android" />
+            </li>
+          )}
+          {urls?.ios && (
+            <li>
+              <PlatformCard href={urls.ios} platform="ios" />
+            </li>
+          )}
         </ul>
       </div>
     </article>

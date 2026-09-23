@@ -88,6 +88,9 @@ export function Projects() {
               'Supabase',
               'Render / Vercel',
             ]}
+            urls={{
+              web: 'https://sigchos-booking.vercel.app/',
+            }}
           />
 
           <ProjectCard
@@ -122,6 +125,10 @@ export function Projects() {
               'Next.js',
               'Twilio API (WhatsApp)',
             ]}
+            urls={{
+              android:
+                'https://play.google.com/store/apps/details?id=com.runakay.petclub',
+            }}
           />
         </div>
       </section>
