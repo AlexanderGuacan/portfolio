@@ -1,0 +1,11 @@
+@import 'tailwindcss';
+
+@layer components {
+  .badge {
+    @apply inline-block px-2.5 py-1 rounded-md bg-zinc-800 text-zinc-300 border border-zinc-700;
+  }
+
+  .badge--red {
+    @apply bg-red-500/10 text-red-400 border-red-500/20;
+  }
+}

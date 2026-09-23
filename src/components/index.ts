@@ -1,0 +1,8 @@
+export { NavBar } from './NavBar.tsx'
+export { Hero } from './Hero.tsx'
+export { Projects } from './Projects.tsx'
+export { ProjectCard } from './ProjectCard.tsx'
+export { Skills } from './Skills.tsx'
+export { AboutMe } from './AboutMe.tsx'
+export { Contact } from './Contact.tsx'
+export { Footer } from './Footer.tsx'

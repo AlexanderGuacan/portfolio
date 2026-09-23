@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-brand-dark: #0d0d0d;
+  --color-brand-red: #ef4444;
+  --color-brand-red-dark: #991b1b;
+  --color-brand-border: #27272a;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #0d0d0d;
+  color: #f4f4f5;
+}
+
+@layer components {
+  button,
+  label {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
